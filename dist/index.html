@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="tfs-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link src="./src/style.css" rel="stylesheet"/>
+        <link src="./styles/modalstyle.css" rel="stylesheet"/>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="main.239206cd00b0ae0c3d77.js"></script></head>
+    <body>
+        <div class="outer-container">
+            <div class="sidebar"> 
+                <div class="logo">
+                    <img src="../src/images/logo.png"/>
+                </div>
+                <div class="social-links">
+                    <p><a class="facebook-icon" href="https://www.facebook.com/"><img src="../src/images/facebookIcon.jpg" style="width:30px;height:30px;"></a></p>
+                    <p><a href="https://za.pinterest.com/"><img src="../src/images/pinrest_icon.png" style="width:30px;height:30px;"></a></p>
+                    <p><a href="https://www.instagram.com/"><img src="../src/images/instagram_icon.jpg" style="width:30px;height:30px;"></a></p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="topnav-middle">
+                <a>Services</a>
+                <a>Discovery</a>
+                <a>Weather</a>
+                <a>My Booking</a>
+                    <div class="topnav-right">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <i class="material-icons" style="color:red">flag</i>
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">South Africa</a>
+                                <a href="#">America</a>
+                                <a href="#">China</a>
+                            </div>
+                        </div>
+                        <a class="login-btn">Login</a>
+                        <a class="sign-upBtn">Sign Up</a>
+                    </div>
+                </div>
+                <div class="message-div">
+                    <h1 class="message">Welcome to<br></br><strong><strong>WANDERLUST.</strong></strong> </h1>
+                    <p class="message"> Jobs fill your pocket, adventure fill your soul. </p>
+                </div>
+                <div class="container-options">
+                    <button id="myBtn">Open Modal</button>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>
+                        Hotel
+                        <i class="material-icons">hotel</i>
+                    </span>
+                    <span>Flight 
+                        <i class="material-icons">flight</i>
+                    </span>
+                    <span>Taxi 
+                        <i class="material-icons">local_taxi</i>
+                    </span>
+                    <span>Car 
+                        <i class="material-icons">directions_car</i>
+                    </span>
+                </div>
+                <div class="modal-body">
+                    <div class="hotel-body">
+                        <p>Destination:</p>
+                        <i class="material-icons">place</i><input type="text" class="line-textbox" placeholder="Search Destination" >
+                    </div>
+                    
+                    <div class="checkin-checkout">
+                        <div class="col-1-4 col-1-4-sm">
+                            <div class="controls">
+                                <p>Check-in Date</p>
+                                <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                            </div>      
+                        </div>
+                        <div class="col-1-4 col-1-4-sm">
+                            <div class="controls">
+                                <p>Check-out Date</p>
+                                <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                            </div>      
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="people">
+                        <div class="col-1-3 col-1-3-sm">
+                            <div class="controls">
+                                <p >Adults:</p>
+                                <i class="material-icons">person</i>
+                                <input type="text" class="line-textbox" placeholder="" >
+                            </div> 
+                        </div>
+                        <div class="col-1-3 col-1-3-sm">
+                            <div class="controls">
+                                <p >Children:</p>
+                                <i class="material-icons">android</i>
+                                <input type="text" class="line-textbox" placeholder="" >
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="rooms">
+                        <div class="controls">
+                            <p >Room:</p>
+                            <i class="material-icons">hotel</i>
+                            <input type="text" class="line-textbox" placeholder="" >
+                        </div>
+                    </div>
+                    <br/>
+                <div class="modal-footer">
+                    <button class="find-button"><i class="material-icons" style="color:white">search</i>Find</button>
+                </div>
+            </div>
+
+        </div>
+        
+    </body>
+</html>

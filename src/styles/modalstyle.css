@@ -1,0 +1,99 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 80px; 
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 600px;
+  overflow: auto; 
+}
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid whitesmoke;
+  width: 80%;
+  border-radius: 12px;
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: white;
+  color: gray;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 12px;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: white;
+  color: white;
+}
+.modal-header :hover {
+  color: blue;
+  border-bottom-style: solid;
+}
+
+.material-icons {
+  color: gray;
+}
+.material-icons :hover {
+  color: blue;
+  border-bottom-style: none;
+}
+.line-textbox {
+  border:none;
+  border-bottom:2px solid gray;
+}
+.checkin-checkout {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  flex-direction: row;
+  flex-basis: auto;
+}
+.people {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  flex-direction: row;
+  flex-basis: auto;
+}
+.modal-footer > .find-button {
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  width: 300px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-header span,i {
+    float: none;
+    display: block;
+  }
+}
